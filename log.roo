@@ -8,3 +8,5 @@ field string --fieldName phoneNumber
 json all 
 web mvc json setup
 web mvc json all --package ~.web
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-03-23 16:22:12
+perform tests
