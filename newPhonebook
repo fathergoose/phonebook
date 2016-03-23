@@ -1,0 +1,9 @@
+project --topLevelPackage com.ilseman.phonebook
+jpa setup --provider HIBERNATE --database POSTGRES 
+entity jpa --class com.ilseman.phonebook.domain.Listing --testAutomatically
+field string --fieldName firstName
+field string --fieldName lastName
+field string --fieldName phoneNumber
+json all 
+web mvc json setup
+web mvc json all --package ~.web

@@ -1,0 +1,9 @@
+<aspectj>
+<aspects>
+<aspect name="com.ilseman.phonebook.domain.ListingDataOnDemand_Roo_Configurable"/>
+<aspect name="com.ilseman.phonebook.domain.ListingIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.ilseman.phonebook.domain.ListingDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.ilseman.phonebook.domain.ListingIntegrationTest_Roo_Configurable"/>
+</aspects>
+</aspectj>
+

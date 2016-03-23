@@ -1,0 +1,12 @@
+<aspectj>
+<aspects>
+<aspect name="com.ilseman.phonebook.domain.Listing_Roo_Jpa_ActiveRecord"/>
+<aspect name="com.ilseman.phonebook.domain.Listing_Roo_JavaBean"/>
+<aspect name="com.ilseman.phonebook.domain.Listing_Roo_Jpa_Entity"/>
+<aspect name="com.ilseman.phonebook.domain.Listing_Roo_Configurable"/>
+<aspect name="com.ilseman.phonebook.web.ListingController_Roo_Controller_Json"/>
+<aspect name="com.ilseman.phonebook.domain.Listing_Roo_Json"/>
+<aspect name="com.ilseman.phonebook.domain.Listing_Roo_ToString"/>
+</aspects>
+</aspectj>
+
