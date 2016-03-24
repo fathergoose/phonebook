@@ -24,6 +24,7 @@ angular.module('phonebookApp')
       console.log(listing);
       listing.$save(function(){
         $scope.listings = listings.query();
+        $scope.listing = null;
       });
     }
         
