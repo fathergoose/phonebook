@@ -9,7 +9,7 @@
  */
 angular.module('phonebookApp')
   .factory('listings', function ($resource) {
-    return $resource('/listings/:id.json', null, {
+    return $resource('/listings/:id.json',{id:'@id'}, {
       'update': { method:'PUT' }
     });
   });

@@ -28,6 +28,12 @@ angular.module('phonebookApp')
         $scope.contactForm.$setPristine(true);
       });
     }
+
+    $scope.remove = function(listing) {
+      listing.$delete(function(){
+        $scope.listings = listings.query();
+        });
+    }
         
 
 

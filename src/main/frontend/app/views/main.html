@@ -37,6 +37,7 @@
             <th>Firstname</th>
             <th>Lastname</th>
             <th>Contact</th>
+            <th>Remove</th>
           </tr>
         </thead>
         <tbody ng-repeat="listing in listings">
@@ -44,6 +45,7 @@
             <td>{{listing.firstName}}</td>
             <td>{{listing.lastName}}</td>
             <td>{{listing.phoneNumber}}</td>
+            <td><span style="padding-left:1em"><i ng-click="remove(listing)" class="glyphicon glyphicon-remove"></i></span></td>
           </tr>
         </tbody>
       </table>
