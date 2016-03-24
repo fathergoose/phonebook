@@ -1,0 +1,19 @@
+{
+  "name": "phonebook",
+  "version": "1.0.0",
+  "description": "A sample app to demonstrate basic CRUD functionality with java (spring) and angularJs on heroku.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/fathergoose/phonebook.git"
+  },
+  "author": "fathergoose",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fathergoose/phonebook/issues"
+  },
+  "homepage": "https://github.com/fathergoose/phonebook#readme"
+}
