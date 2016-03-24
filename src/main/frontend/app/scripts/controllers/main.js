@@ -8,11 +8,25 @@
  * Controller of the phonebookApp
  */
 angular.module('phonebookApp')
-  .controller('MainCtrl', ['listings', function (listings) {
+  .controller('MainCtrl', ['$scope', 'listings', function ($scope, listings) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
-    this.listings = listings.query();
+    $scope.listings = listings.query();
+
+    $scope.add = function(frmLstObj) {
+      var listing = new listings();
+      listing.firstName = frmLstObj.firstName;
+      listing.lastName = frmLstObj.lastName;
+      listing.phoneNumber = frmLstObj.phoneNumber;
+      console.log(listing);
+      listing.$save(function(){
+        $scope.listings = listings.query();
+      });
+    }
+        
+
+
   }]);

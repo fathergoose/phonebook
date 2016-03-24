@@ -1,14 +1,42 @@
 <div class="row">
   <div class="col-xs-6 col-lg-4">
     <div class="well well-lg">
-      <h1>Hello</h1>
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input class="form-control" ng-model="listing.firstName">
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input class="form-control" ng-model="listing.lastName">
+        </div>
+        <div class="form-group">
+          <label for="phoneNumber">Phone or Contact</label>
+          <input class="form-control" ng-model="listing.phoneNumber">
+        </div>
+        <div class="form-group">
+          <button class="btn btn-lg btn-success" ng-click="add(listing)">Add Contact</button>
+        </div>
+             
     </div>
   </div>
   <div class="col-xs-12 col-sm-6 col-lg-8">
     <div class="well well-lg">
-      <div ng-repeat="listing in main.listings">
-        {{listing.firstName}}
-      </div>
+      <table class="table"> 
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Contact</th>
+          </tr>
+        </thead>
+        <tbody ng-repeat="listing in listings">
+          <tr>
+            <td>{{listing.firstName}}</td>
+            <td>{{listing.lastName}}</td>
+            <td>{{listing.phoneNumber}}</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </div>
