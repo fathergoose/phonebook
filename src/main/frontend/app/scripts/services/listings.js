@@ -8,16 +8,8 @@
  * Factory in the phonebookApp.
  */
 angular.module('phonebookApp')
-  .factory('listings', function () {
-    // Service logic
-    // ...
-
-    var meaningOfLife = 42;
-
-    // Public API here
-    return {
-      someMethod: function () {
-        return meaningOfLife;
-      }
-    };
+  .factory('listings', function ($resource) {
+    return $resource('/listings/:id.json', null, {
+      'update': { method:'PUT' }
+    });
   });
