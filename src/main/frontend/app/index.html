@@ -51,7 +51,10 @@
 
     <div class="footer">
       <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+        <p><span class="glyphicon glyphicon-copyright-mark"></span> Al Ilseman <span id="currentYear"></span></p>
+        <script>
+          document.getElementById("currentYear").innerHTML = new Date().getFullYear().toString();
+        </script>
       </div>
     </div>
 
