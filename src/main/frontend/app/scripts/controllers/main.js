@@ -25,6 +25,7 @@ angular.module('phonebookApp')
       listing.$save(function(){
         $scope.listings = listings.query();
         $scope.listing = null;
+        $scope.contactForm.$setPristine(true);
       });
     }
         
